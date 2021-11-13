@@ -38,10 +38,7 @@ const RegisterForm = () => {
 
   return (
     <div className="form-container">
-      <h2 className="form-container__text">
-        Welcome! We're happy to have you here at MarioNet: a site for
-        establishing relationships, breaking them and sharing mini de fuet.
-      </h2>
+      <h2 className="form-container__text">We accept you! One of us!</h2>
       <form
         onSubmit={onSubmit}
         autoComplete="off"
