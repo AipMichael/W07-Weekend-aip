@@ -5,4 +5,8 @@
 body {
   background-color: #ffffff;
   color: #a033b3;
+  min-height: 100vh;
+  background-image: url("https://img.freepik.com/free-vector/80-s-retro-futurism-landscape_180158-1.jpg?size=626&ext=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

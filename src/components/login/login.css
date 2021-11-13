@@ -26,7 +26,7 @@
 
 input {
   border-radius: 5px;
-  border: 1px solid yellow;
+  border: 1px solid #ffbb01;
 }
 
 .login__button {
@@ -34,7 +34,7 @@ input {
   height: 20px;
   border: none;
   cursor: pointer;
-  background-color: #e65d64;
+  background-color: #ff4d78;
   color: white;
   margin: 2px;
 }
