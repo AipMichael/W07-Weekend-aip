@@ -1,8 +1,20 @@
-const actionTypes = {
-  /*   loadUsers: "LOAD_USERS",
-  createUser: "CREATE_USER", */
-  userLogin: "USER_LOGIN",
-  userLogout: "USER_LOGOUT",
-};
+import actionTypes from "./actionTypes";
 
-export default actionTypes;
+export const loadUsersAction = (users) => ({
+  type: actionTypes.loadRobots,
+  users,
+});
+
+export const createUserAction = (user) => ({
+  type: actionTypes.createRobot,
+  user,
+});
+
+export const userLoginAction = (user) => ({
+  type: actionTypes.userLogin,
+  user,
+});
+
+export const userLogoutAction = () => ({
+  type: actionTypes.userLogout,
+});
