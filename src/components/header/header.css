@@ -1,9 +1,32 @@
 .nav-bar {
   display: flex;
   background-color: rgb(0, 0, 0);
+  justify-content: space-between;
 }
 
-.logo {
+.nav-bar__brand {
+  display: flex;
+}
+
+.nav-bar__register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.nav-bar__signup-button {
+  border-radius: 5px;
+
+  border: none;
+  cursor: pointer;
+  background-color: #ffbb01;
+  color: white;
+  margin: 2px;
+  padding: 10px 20px;
+}
+
+.nav-bar__logo {
   background-image: url("https://i.ibb.co/ydvpT7H/Mario-netzwerk-removebg-preview.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -12,6 +35,6 @@
   width: 50px;
 }
 
-.main-title {
+.nav-bar__main-title {
   color: #ff4d78;
 }

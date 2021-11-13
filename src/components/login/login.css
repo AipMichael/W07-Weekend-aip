@@ -27,14 +27,17 @@
 input {
   border-radius: 5px;
   border: 1px solid #ffbb01;
+  height: 30px;
+  padding: 0 15px;
 }
 
 .login__button {
   border-radius: 5px;
-  height: 20px;
   border: none;
   cursor: pointer;
   background-color: #ff4d78;
   color: white;
   margin: 2px;
+  margin-top: 10px;
+  padding: 10px 20px;
 }
