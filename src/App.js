@@ -1,10 +1,12 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/header/header";
+import LogInForm from "./components/login/login";
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to the real MySpace (not yours)</h1>
+      <Header />
+      <LogInForm />
     </div>
   );
 }

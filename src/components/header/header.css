@@ -1,0 +1,17 @@
+.nav-bar {
+  display: flex;
+  background-color: black;
+}
+
+.logo {
+  background-image: url("https://i.ibb.co/ydvpT7H/Mario-netzwerk-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50px;
+  margin-top: 20px;
+  width: 50px;
+}
+
+.main-title {
+  color: #e65d64;
+}
