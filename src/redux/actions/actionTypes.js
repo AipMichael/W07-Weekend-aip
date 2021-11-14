@@ -1,6 +1,5 @@
 const actionTypes = {
-  /*   loadUsers: "LOAD_USERS",
-  createUser: "CREATE_USER", */
+  userAuthentication: "USER_AUTHENTICATION",
   userLogin: "USER_LOGIN",
   userLogout: "USER_LOGOUT",
 };

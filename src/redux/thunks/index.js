@@ -4,8 +4,8 @@ import jwtDecode from "jwt-decode";
 
 const myApi = `https://aip-netzwerk.herokuapp.com/users`;
 
-export const userLoginThunk = (user) => async (dispatch) => {
-  const response = await axios.post(myApi + "users/login", user);
+export const loginUserThunk = (user) => async (dispatch) => {
+  const response = await axios.post(myApi + "/login", user);
   if (response.status === 200) {
     const token = response.data.token;
     const user = jwtDecode(token); //instaló npm i jwt-decode
