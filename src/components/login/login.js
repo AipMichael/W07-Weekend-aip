@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import useUser from "../../hooks/useUser";
 import "./login.css";
 
 const LogInForm = () => {
-  /*   const { userLogin } = useUser(); */
+  const { userLogin } = useUser();
 
   const initialUser = {
     username: "",
@@ -22,7 +23,7 @@ const LogInForm = () => {
   const onSubmit = (event) => {
     event.preventDefault();
 
-    /* userLogin(userData) */
+    userLogin(userData);
   };
 
   useEffect(() => {
