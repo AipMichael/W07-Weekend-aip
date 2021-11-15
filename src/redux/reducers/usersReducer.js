@@ -7,6 +7,9 @@ const usersReducer = (users = [], action) => {
     case actionTypes.loadUsers:
       newUsers = [...action.users];
       break;
+    case actionTypes.createUser:
+      newUsers = [...users, action.user];
+      break;
 
     default:
       newUsers = users;

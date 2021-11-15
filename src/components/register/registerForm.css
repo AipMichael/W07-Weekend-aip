@@ -1,0 +1,21 @@
+textarea {
+  border-radius: 5px;
+  border: 1px solid #ffbb01;
+}
+
+.form-line {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.register-form {
+  padding: 15px 30px;
+  margin: 0 15px;
+}
+
+.form-container_bio {
+  display: flex;
+  align-items: center;
+}
