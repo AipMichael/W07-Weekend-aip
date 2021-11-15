@@ -28,4 +28,5 @@ li {
   border: none;
   padding: 10px 20px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
