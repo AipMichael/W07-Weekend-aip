@@ -18,7 +18,7 @@ export const loadUsersThunk = () => async (dispatch) => {
   dispatch(loadUsersAction(users));
 };
 
-export const createRobotThunk = (user) => {
+export const createUserThunk = (user) => {
   return async (dispatch) => {
     const { data: newUser } = await axios.post(myApi, user);
     dispatch(createUserAction(newUser));
