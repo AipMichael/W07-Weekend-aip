@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import useUsers from "../../hooks/useUsers";
 import "./registerForm.css";
 
 const RegisterForm = () => {
-  /*   const { userLogin } = useUser(); */
+  const { createUser } = useUsers();
 
   const initialUser = {
     name: "",
@@ -25,7 +26,7 @@ const RegisterForm = () => {
   const onSubmit = (event) => {
     event.preventDefault();
 
-    /* userLogin(userData) */
+    createUser(userData);
   };
 
   useEffect(() => {
@@ -43,9 +44,9 @@ const RegisterForm = () => {
         onSubmit={onSubmit}
         autoComplete="off"
         noValidate
-        className="login-form"
+        className="login-form register-form"
       >
-        <div className="form-container_name">
+        <div className="form-container_name form-line">
           <label htmlFor="username">Your name: </label>
           <input
             type="name"
@@ -56,7 +57,7 @@ const RegisterForm = () => {
             onChange={changeUserData}
           />
         </div>
-        <div className="form-container_username">
+        <div className="form-container_username form-line">
           <label htmlFor="username">Your username: </label>
           <input
             type="username"
@@ -67,7 +68,7 @@ const RegisterForm = () => {
             onChange={changeUserData}
           />
         </div>
-        <div className="form-container_password">
+        <div className="form-container_password form-line">
           <label htmlFor="password">Password: </label>
           <input
             type="password"
@@ -78,8 +79,8 @@ const RegisterForm = () => {
             onChange={changeUserData}
           />
         </div>
-        <div className="form-container_picture">
-          <label htmlFor="username">Your picture: </label>
+        <div className="form-container_picture form-line">
+          <label htmlFor="image">Your picture: </label>
           <input
             type="picture"
             className="form-container_picture-input"
@@ -89,8 +90,20 @@ const RegisterForm = () => {
             onChange={changeUserData}
           />
         </div>
+        <div className="form-container_bio form-line">
+          <label htmlFor="bio" className="bio-label">
+            Your bio:{" "}
+          </label>
+          <textarea
+            className="form-container_picture-input"
+            id="bio"
+            placeholder="Enter a brief description of yourself."
+            value={userData.bio}
+            onChange={changeUserData}
+          />
+        </div>
         <button type="submit" className="login__button" disabled={isDisabled}>
-          Submit
+          Create me!
         </button>
       </form>
     </div>
