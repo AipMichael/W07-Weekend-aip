@@ -1,3 +1,14 @@
 .mi-pre {
   color: white;
 }
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.marionette {
+  height: 200px;
+}

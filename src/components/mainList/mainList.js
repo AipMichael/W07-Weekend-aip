@@ -3,6 +3,7 @@ import useUser from "../../hooks/useUser";
 import "./mainList.css";
 
 import { useEffect } from "react";
+import UserItem from "../UserItem/UserItem";
 
 const MainList = () => {
   const { users, loadUsers } = useUsers();
@@ -19,8 +20,13 @@ const MainList = () => {
           <img
             src="https://i.ibb.co/1zy9xG9/mario-Nette.png"
             alt="marionette"
+            className="marionette"
           />
-          <pre className="mi-pre">{JSON.stringify(users, null, 2)}</pre>
+          <ul>
+            {users.map((user) => (
+              <UserItem user={user} key={user.id} />
+            ))}
+          </ul>
         </>
       ) : (
         ""
