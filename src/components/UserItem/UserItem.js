@@ -20,9 +20,9 @@ const UserItem = ({ user }) => {
         </div>
         <div className="card-body">
           <h5 className="card-title">{user.username}</h5>
-          <p className="card-text">Bio: {user.bio}</p>
+          <p className="card-text">{user.bio}</p>
           <p className="card-text">
-            This is my {user.friend ? "friend" : "enemy"}
+            This is my {user.friend ? "friend" : "enemy"}.
           </p>
           <button onClick={actionOnClick} className="contact-relationship">
             {user.friend ? "Hate you." : "Befriend you."}
