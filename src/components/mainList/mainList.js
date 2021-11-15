@@ -15,22 +15,16 @@ const MainList = () => {
 
   return (
     <>
-      {user.isAuthenticated ? (
-        <>
-          <img
-            src="https://i.ibb.co/1zy9xG9/mario-Nette.png"
-            alt="marionette"
-            className="marionette"
-          />
-          <ul>
-            {users.map((user) => (
-              <UserItem user={user} key={user.id} />
-            ))}
-          </ul>
-        </>
-      ) : (
-        ""
-      )}
+      <img
+        src="https://i.ibb.co/1zy9xG9/mario-Nette.png"
+        alt="marionette"
+        className="marionette"
+      />
+      <ul>
+        {users.map((user) => (
+          <UserItem user={user} key={user.id} />
+        ))}
+      </ul>
     </>
   );
 };
