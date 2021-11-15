@@ -9,7 +9,7 @@ const RegisterForm = () => {
     name: "",
     username: "",
     password: "",
-    image: "",
+    photo: "",
     bio: "",
   };
 
@@ -80,13 +80,13 @@ const RegisterForm = () => {
           />
         </div>
         <div className="form-container_picture form-line">
-          <label htmlFor="image">Your picture: </label>
+          <label htmlFor="photo">Your picture: </label>
           <input
             type="picture"
             className="form-container_picture-input"
-            id="image"
+            id="photo"
             placeholder="Enter your picture's url"
-            value={userData.image}
+            value={userData.photo}
             onChange={changeUserData}
           />
         </div>

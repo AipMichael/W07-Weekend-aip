@@ -20,7 +20,11 @@ export const loadUsersThunk = () => async (dispatch) => {
 
 export const createUserThunk = (user) => {
   return async (dispatch) => {
-    const { data: newUser } = await axios.post(myApi, user);
-    dispatch(createUserAction(newUser));
+    try {
+      const { data: newUser } = await axios.post(`${myApi}/register`, user);
+      dispatch(createUserAction(newUser));
+    } catch (error) {
+      console.log("peligro thunk 27", error);
+    }
   };
 };
