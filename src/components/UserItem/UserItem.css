@@ -1,0 +1,31 @@
+li {
+  margin: 5px;
+  background-color: #1f0537;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 265px;
+}
+
+.contact-image {
+  width: 265px;
+}
+
+.user-picture {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+  width: 100%;
+}
+
+.contact-relationship {
+  background-color: #ffbb01;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
